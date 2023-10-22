@@ -10,3 +10,5 @@ A repo for django practice projects
 # Project 5
  It covers Templates folder of its own inside individual applications to achieve complete isolations from other application or project level templates folders.
 
+# Project 6
+ It covers templates inside application and templates at project level as well. templates folder available both in application and project level.

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {{students}} <br>
+    {% for key,val in students.items %}
+        {{key}}
+        {% for k,v in val.items %}
+            {{k}} : {{v}} , 
+        {% endfor %} <br>
+        
+    {% endfor %}
+</body>
+</html>

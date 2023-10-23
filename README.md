@@ -12,3 +12,7 @@ A repo for django practice projects
 
 # Project 6
  It covers templates inside application and templates at project level as well. templates folder available both in application and project level.
+
+# Project 7
+ This project is about the static files inside root project directory. static folders consists of css files, javascripts files and images.
+

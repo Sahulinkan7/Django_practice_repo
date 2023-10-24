@@ -26,6 +26,8 @@ A repo for django practice projects
 
 static files inside application. There is no need of any changes in settings.py file for using static files inside applications.
 
+# Project 9
 
+ static files both in project level and application level. need to provide the static folder details inside settings file, for static folder at root directory level.
 
 

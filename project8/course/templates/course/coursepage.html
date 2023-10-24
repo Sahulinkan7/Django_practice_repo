@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ctitle}}</title>
+    <link rel="stylesheet" href="{% static 'course/css/style.css' %}">
+</head>
+<body>
+    <h1>Course details as below</h1>
+    <h2>course name : {{cname}}</h2>
+    <h2>course duration : {{cduration}}</h2>
+    <hr>
+    <button type="submit" onclick="coursealert()">click me</button>
+    <script src="{% static 'course/js/course.js' %}"></script>
+</body>
+</html>

@@ -30,4 +30,6 @@ static files inside application. There is no need of any changes in settings.py 
 
  static files both in project level and application level. need to provide the static folder details inside settings file, for static folder at root directory level.
 
-
+# Project 10
+ 
+ This project covers the concept of template inheritance in django. 

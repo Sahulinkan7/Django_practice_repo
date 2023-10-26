@@ -37,3 +37,7 @@ static files inside application. There is no need of any changes in settings.py 
 # Project 11
 
  This projects covers the concept of template inheritance with static files in django. 
+
+# Project 12 
+
+ This django project includes concept of adding bootstrap files and Hyperlinks in navbars. 

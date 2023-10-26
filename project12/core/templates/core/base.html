@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    {% block corecss %}
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/core.css' %}">
+    {% endblock corecss %}
+</head>
+<body>
+    <div class="container">
+        <div class="row bg-warning">
+            <h1 class="text-center">Project 12</h1>
+        </div>
+        <div class="nav bg-black">
+            <div class="nav-item">
+                <a href="{% url 'home' %}" class="nav-link">Home</a>
+            </div>
+            <div class="nav-item">
+                <a href="{% url "about" %}" class="nav-link">About</a>
+            </div>
+            <div class="nav-item">
+                <a href="{% url "courses" %}" class="nav-link">Courses</a>
+            </div>
+
+        </div>
+        {% block content %}
+
+        {% endblock content %}
+    </div>
+</body>
+</html>

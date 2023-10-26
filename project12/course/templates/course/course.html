@@ -1,0 +1,10 @@
+{% extends "core/base.html" %}
+
+{% block title %}Courses page{% endblock title %}
+
+{% block content %}
+    <h3>Batches are open for following courses.</h3>
+    {% for c in courses %}
+        <li>{{c}}</li>
+    {% endfor %}
+{% endblock content %}

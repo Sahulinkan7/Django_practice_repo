@@ -33,3 +33,7 @@ static files inside application. There is no need of any changes in settings.py 
 # Project 10
  
  This project covers the concept of template inheritance in django. 
+
+# Project 11
+
+ This projects covers the concept of template inheritance with static files in django. 

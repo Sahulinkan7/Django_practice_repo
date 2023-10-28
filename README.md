@@ -57,4 +57,21 @@ static files inside application. There is no need of any changes in settings.py 
  
  This project is about retrieving data from database and displaying on html page using django orm concept.
 
- 
+# Project 15 
+
+ This project covers the concept of registering models in django admin interface to get access to tables from admin panel.
+
+ models can be registered in two ways.
+
+ 1 ) by adding below line of code in admin.py file of application.
+
+        class ModelAdminClassName(admin.ModelAdmin):
+                list_display=('fieldname1','fieldname2',....)
+
+        admin.site.register(ModelClassName,ModelAdminClassName)
+
+ 2 ) using decorator 
+
+        @admin.register(ModelClassName)
+        class ModelAdminClassName(admin.ModelAdmin):
+                list_display=('fieldname1','fieldname2',.....)

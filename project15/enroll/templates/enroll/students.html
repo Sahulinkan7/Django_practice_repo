@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'enroll/css/enroll.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="row bg-dark">
+            <div class="col-sm-6 m-5 text-white">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>stuid</th>
+                            <th>stuname</th>
+                            <th>stuemail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        {% for student in students %}
+                        <tr>
+                            <td>{{student.id}}</td>
+                            <td>{{student.stuid}}</td>
+                            <td>{{student.stuname}}</td>
+                            <td>{{student.stuemail}}</td>
+                        </tr> 
+                        {% endfor %}
+                    </tbody>
+                    
+                </table>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

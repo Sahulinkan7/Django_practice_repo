@@ -45,3 +45,6 @@ static files inside application. There is no need of any changes in settings.py 
 # Resumeproject 
  
  This project covers the concept of template inheritance with static files, adding bootstrap for frontend , etc. A small project to demonstrate the basic web project using django as backend.
+
+# Project 13 
+ This projects is about introduction of ORM in django. how to work with django and database using Object Relational Mapper.

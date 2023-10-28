@@ -48,3 +48,13 @@ static files inside application. There is no need of any changes in settings.py 
 
 # Project 13 
  This projects is about introduction of ORM in django. how to work with django and database using Object Relational Mapper.
+
+ 1 ) create model class in applications models.py file
+ 2 ) python manage.py makemigrations
+ 3 ) python manage.py migrate
+
+# Project 14
+ 
+ This project is about retrieving data from database and displaying on html page using django orm concept.
+
+ 

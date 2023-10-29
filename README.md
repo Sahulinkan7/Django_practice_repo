@@ -92,3 +92,9 @@ static files inside application. There is no need of any changes in settings.py 
   - > label_suffix
   - > help_text
   - > etc ... 
+
+# Project 19
+ This project is about adding css class to form fields through widget arguement in form field.
+ 
+ Example : 
+ name=forms.CharField(widget=form.TextInput(attrs={'class':'form-control'}))

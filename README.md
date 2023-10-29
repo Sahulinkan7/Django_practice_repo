@@ -83,3 +83,12 @@ static files inside application. There is no need of any changes in settings.py 
 # Project 17
 
  This project is about the LOOP concept for retrieving the form fields inside the template.
+
+# Project 18
+ This project is about the FORM api fields and form field arguements.
+  - > initial
+  - > disabled
+  - > label
+  - > label_suffix
+  - > help_text
+  - > etc ... 

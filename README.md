@@ -102,3 +102,8 @@ static files inside application. There is no need of any changes in settings.py 
 # Project 20 
  This project is introduction about form method POST and csrf_token in django form.
 
+# Project 21 
+ This project is about getting form data to views and showing the data in terminal and redirecting upon successfull 
+ enrollment of user.
+ 
+

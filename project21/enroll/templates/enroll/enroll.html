@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'enroll/css/enroll.css' %}">
+</head>
+<body>
+    <div class="container bg-danger">
+        <div class="row">
+            <div class="col-sm-8 m-5 ">
+                <form action="" method="POST" novalidate>
+                    {% csrf_token %}
+                    {% for field in form %}
+                        {{field.label_tag}}
+                        {{field}} {{field.errors}} <br>
+                    {% endfor %}
+                    <input type="submit" class="form-control" value="enroll user">
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

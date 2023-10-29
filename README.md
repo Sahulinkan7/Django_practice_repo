@@ -98,3 +98,7 @@ static files inside application. There is no need of any changes in settings.py 
  
  Example : 
  name=forms.CharField(widget=form.TextInput(attrs={'class':'form-control'}))
+
+# Project 20 
+ This project is introduction about form method POST and csrf_token in django form.
+

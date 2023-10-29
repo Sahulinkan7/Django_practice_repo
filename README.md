@@ -105,5 +105,19 @@ static files inside application. There is no need of any changes in settings.py 
 # Project 21 
  This project is about getting form data to views and showing the data in terminal and redirecting upon successfull 
  enrollment of user.
+
+# Project 22
+ This project is about individual form field validation in forms.py file.
+
+ code as below example : 
+  
+  def clean_<fieldname>(self):
+        <fieldname>=self.cleaned_data['<fieldname>']
+        if {condition to check }:
+                raise forms.validationerror("message)
+        else:
+                return <fieldname>
+
+
  
 

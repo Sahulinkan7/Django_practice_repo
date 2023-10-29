@@ -79,3 +79,7 @@ static files inside application. There is no need of any changes in settings.py 
 # Project 16
 
  This project is about the introduction of FORM API in django.
+
+# Project 17
+
+ This project is about the LOOP concept for retrieving the form fields inside the template.

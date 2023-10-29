@@ -75,3 +75,7 @@ static files inside application. There is no need of any changes in settings.py 
         @admin.register(ModelClassName)
         class ModelAdminClassName(admin.ModelAdmin):
                 list_display=('fieldname1','fieldname2',.....)
+
+# Project 16
+
+ This project is about the introduction of FORM API in django.

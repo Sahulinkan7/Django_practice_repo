@@ -118,6 +118,11 @@ static files inside application. There is no need of any changes in settings.py 
         else:
                 return <fieldname>
 
+# Project 23 
+ This project is about validating the entire form at once using clean method. using clean method dependable fields can be validated at form level. also implemented the custom validator in this project.
+
+ password=forms.CharField(validators=[customvalidatorname],widget=forms.PasswordInput)
+
 
  
 

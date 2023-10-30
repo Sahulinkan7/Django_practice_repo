@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'enroll/css/enroll.css' %}">
+</head>
+<body>
+    <div class="container bg-warning">
+        <div class="row">
+            <div class="col-sm-6 m-5">
+                <form action="" method="post" novalidate>
+                    {% csrf_token %}
+                    {% for field in form %}
+                        {{field.label_tag}}
+                        
+                        {{field}} 
+                        <span class="help">{{field.help_text | striptags}}</span> <br>
+                        <span class="errors">{{field.errors | striptags}}</span> <br>
+
+                    {% endfor %}
+                    <input type="submit" value="Submit" class="form-control btn btn-dark">
+                    <span class="errors">{{form.non_field_errors | striptags}}</span>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+html,body{
+    background-color: rgb(8, 8, 8);
+    height:100%;
+}
+
+.container{
+    min-height: 100%;
+}
+
+label{
+    font-weight: 500;
+    color:white;
+}
+.errors{
+    color:rgb(190, 13, 13);
+    font-weight: 800;
+}
+
+.help{
+    color:greenyellow;
+}

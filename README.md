@@ -123,6 +123,8 @@ static files inside application. There is no need of any changes in settings.py 
 
  password=forms.CharField(validators=[customvalidatorname],widget=forms.PasswordInput)
 
+# Project 24
+ This project is about styling django form validation errors in template using css classes.
 
  
 

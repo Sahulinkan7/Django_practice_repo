@@ -1,0 +1,16 @@
+html,body{
+    height: 100%;
+}
+
+.container{
+    min-height:100%
+}
+
+label{
+    color:white;
+}
+
+.errors{
+    color:rgb(75, 4, 4);
+    font-weight: bold;
+}

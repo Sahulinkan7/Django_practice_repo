@@ -1,0 +1,19 @@
+html,body{
+    height: 100%;
+    background-color: rgb(202, 127, 13);
+}
+
+.container{
+    min-height: 100%;
+}
+
+label{
+    font-weight: bold;
+}
+.container-fluid{
+    min-height: 100%;
+}
+.errors{
+    color:red;
+    font-weight: 700;
+}

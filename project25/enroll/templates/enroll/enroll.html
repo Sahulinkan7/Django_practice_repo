@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% block corecss %}
+        <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'enroll/css/enroll.css' %}">
+    {% endblock corecss %}
+</head>
+<body>
+    <div class="container bg-primary-subtle">
+        <div class="row">
+            <div class="col-sm-9 m-5 card p-4">
+                <h3>Student enrollment form</h3>
+                <form action="" method="post" novalidate>
+                    {% csrf_token %}
+                    {% for field in form %}
+                        {{field.label_tag}}
+                        {{field}} <span class="errors">{{field.errors|striptags}}</span> <br>
+                    {% endfor %}
+                    <input type="submit" value="Enroll User" class="form-control btn btn-primary">
+                    <span class="errors">{{form.non_field_errors | striptags}}</span>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

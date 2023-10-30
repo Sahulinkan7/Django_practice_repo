@@ -126,5 +126,7 @@ static files inside application. There is no need of any changes in settings.py 
 # Project 24
  This project is about styling django form validation errors in template using css classes.
 
- 
+# Project 25 
+ This project is about inserting form data into database . we have used form api for creating form and through views function creating the model object and saving form data into database.
 
+ 

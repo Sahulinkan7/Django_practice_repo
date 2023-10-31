@@ -137,4 +137,7 @@ static files inside application. There is no need of any changes in settings.py 
 
 # CRUD project1
  This project is about the CRUD operation . ModelForms has been used for form creation and the views are function based.
+
+# Project 28
+ This project is about practicing message framework of django. 
  

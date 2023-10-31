@@ -132,4 +132,6 @@ static files inside application. There is no need of any changes in settings.py 
 # Project 26
  This project is about ModelForm. creating forms from models using forms.ModelForm . 
 
+# Project 27 
+ Its about practicing dynamic urls. passing arguements in urls dynamically.
  

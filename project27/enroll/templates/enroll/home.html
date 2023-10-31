@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>{{id}} -- {{id2}}</h1>
+            <a href="{% url 'home' 1 %}">select 1 </a>
+            <a href="{% url 'home' 2 %}">select 2 </a>
+            <a href="{% url 'home' 3 %}">select 3 </a>
+
+            <h2>multiple dynamic url parameter </h2>
+            <h1>{{id}} -- {{id2}}</h1>
+            <a href="{% url 'home' 1 1 %}">select sub 1 </a>
+            <a href="{% url 'home' 2 3 %}">select sub 3 </a>
+            <a href="{% url 'home' 3 4 %}">select sub 4 </a>
+        </div>
+    </div>
+</body>
+</html>

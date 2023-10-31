@@ -140,4 +140,7 @@ static files inside application. There is no need of any changes in settings.py 
 
 # Project 28
  This project is about practicing message framework of django. 
+
+# Project 29 
+ This project is about practicing usercreation or signup form in django. UserCreationForm forms imported from django.contrib.auth.forms . 
  

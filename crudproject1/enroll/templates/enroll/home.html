@@ -1,0 +1,54 @@
+{% extends "enroll/base.html" %}
+
+{% block content %}
+
+    <div class="col-sm-4">
+        <h3 class="text-center">Enroll new Student</h3>
+        <form action="" method="post" novalidate>
+            {% csrf_token %}
+            {% for field in form %}
+                {{field.label_tag}}
+                {{field}} <span class="errors">{{field.errors | striptags }} </span><br>
+            {% endfor %}
+            <input type="submit" value="Enroll Student" class="form-control btn btn-primary mt-2">
+            <span class="errors">{{form.non_field_errors | striptags }}</span>
+        </form>
+    </div>
+    <div class="col-sm-7 offset-1">
+        <h3 class="text-center">Enrolled Student list</h3>
+        {% if stu %}
+        <table class="table table-hover table-light">
+            <thead class="text-center">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Contact no.</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                {% for s in stu %}
+                    <tr>
+                        <th scope="row">{{s.id}}</th>
+                        <td>{{s.name}}</td>
+                        <td>{{s.email}}</td>
+                        <td>{{s.contact}}</td>
+                        <td>
+                            <a href="{% url 'editstudent' s.id %}" class="btn btn-sm btn-warning">Edit</a>
+                            <form action="{% url 'deletestudent' s.id %}" method="post" class="d-inline">
+                                {% csrf_token %}
+                                <input type="submit" class="btn btn-danger btn-sm" value="Delete">
+                            </form>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+            <h2 class="text-center bg-danger m-5 text-white">No Data present in Database</h2>
+        {% endif %}
+        
+    </div>
+
+{% endblock content %}

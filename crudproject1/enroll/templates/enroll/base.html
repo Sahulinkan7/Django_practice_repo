@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Project 1</title>
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'enroll/css/enroll.css' %}">
+</head>
+<body>
+    <div class="container bg-body-secondary">
+        <div class="row mt-2">
+            <h1 class="text-bg-dark p-2 text-center">Function Based view with Model Form CRUD Project</h1>
+            {% block content %}
+            
+            {% endblock content %}
+        </div>
+    </div>
+</body>
+</html>

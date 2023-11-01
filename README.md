@@ -146,3 +146,6 @@ static files inside application. There is no need of any changes in settings.py 
  
 # Project 30 
  This project is about customizing the usercreationform. 
+
+# Project 31
+ This project is about practicing signup and login features in django webframework. 

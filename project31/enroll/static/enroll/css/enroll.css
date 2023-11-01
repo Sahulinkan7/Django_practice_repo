@@ -1,0 +1,21 @@
+html,body{
+    height:100%;
+}
+
+.container-fluid{
+    min-height: 100%;
+}
+
+label{
+    color:white;
+}
+
+.errors{
+    color:red;
+}
+
+.alert-success{
+    background-color: green;
+    color:white;
+    font-weight: 500;
+}

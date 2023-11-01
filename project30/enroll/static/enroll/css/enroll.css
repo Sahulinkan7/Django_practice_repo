@@ -1,0 +1,13 @@
+html,body{
+    height:100%;
+    background-color: #ad4c26;
+}
+
+.container{
+    min-height: 100%;
+}
+
+.alert-success{
+    background-color: green;
+    color:white;
+}

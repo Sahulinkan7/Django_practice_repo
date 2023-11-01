@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'enroll/css/enroll.css' %}">
+</head>
+<body>
+    <div class="container bg-gradient">
+        <div class="row">
+            <div class="col-sm-5 mt-2 mx-5 p-4 card">
+                <form action="" method="post" novalidate>
+                    {% csrf_token %}
+                    {% for field in form %}
+                        {{field.label_tag}}
+                        {{field}} <span class="errors">{{field.errors | striptags}}</span><br>
+                    {% endfor %}
+                    <input type="submit" class="btn btn-primary form-control" value="Submit">
+                    <span class="errors">{{form.non_field_errors}}</span>
+                </form>
+            </div>
+            <div class="col-sm-4">
+                {% if messages %}
+                    {% for message in messages %}
+                    <div class="alert alert-dismissible alert-{{message.tags}}">
+                        {{message}}
+                        <button class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                        
+                    {% endfor %}
+                {% endif %}
+            </div>
+            
+        </div>
+    </div>
+    <script src="{% static 'enroll/js/bootstrap.min.js' %}"></script>
+</body>
+</html>

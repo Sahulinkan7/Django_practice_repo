@@ -1,0 +1,31 @@
+{% extends "enroll/base.html" %}
+{% block content %}
+<section>
+    <div class="container">
+        <h2 class="text-center">Login</h2>
+        <div class="row mt-4">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-6 mt-3 border p-4 shadow">
+                <form action="" method="post" novalidate >
+                    {% csrf_token %}
+                    {% for field in form %}
+                        {{field.label_tag}}
+                        {{field}} <small class="errors">{{field.errors | striptags }}</small> <br>
+                    {% endfor %}
+                    <input type="submit" value="Login" class="btn btn-primary form-control mt-2">
+                    <span class="errors">{{form.non_field_errors | striptags}}</span>
+                </form>
+                <div class="mt-1">
+                    <a href="" class="text-white text-decoration-none">create an account</a> <br>
+                </div>
+            </div>
+            <div class="col-sm-3">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

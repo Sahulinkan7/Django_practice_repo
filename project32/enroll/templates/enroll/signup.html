@@ -1,0 +1,14 @@
+{% extends "enroll/base.html" %}
+
+{% block content %}
+<form action="" method="post" novalidate>
+    {% csrf_token %}
+    <div class="col-sm-7">
+        {% for field in form %}
+            {{field.label_tag}}
+            {{field}} <span class="errors">{{field.errors | striptags }}</span> <br>
+        {% endfor %}
+        <input type="submit" value="signup" class="form-control btn btn-primary mt-1">
+    </div>
+</form>
+{% endblock content %}

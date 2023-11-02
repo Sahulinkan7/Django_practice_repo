@@ -149,3 +149,6 @@ static files inside application. There is no need of any changes in settings.py 
 
 # Project 31
  This project is about practicing signup and login features in django webframework. 
+
+# Project 32
+ This project is about changing user password.

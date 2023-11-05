@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg">
+    <div class="container fw-bold">
+        <a href="" class="navbar-brand">PSS</a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarText"> 
+            Menu
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto">
+                {% if request.user.is_authenticated %}
+                    <li class="navbar-item">
+                        <a href="{% url 'profile' request.user.id %}" class="nav-link">Edit Profile</a>
+                    </li>
+                {% endif %}
+                <li class="navbar-item">
+                    <a href="" class="nav-link">change password</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="" class="nav-link">set password</a>
+                </li>
+                {% if request.user.is_superuser %}
+                    <li class="navbar-item">
+                        <a href="{% url 'adminpage' %}" class="nav-link">adminpage</a>
+                    </li>
+                {% endif %}
+                
+                {% if not request.user.is_authenticated %}
+                    <li class="navbar-item">
+                        <a href="{% url 'home' %}" class="nav-link">login</a>
+                    </li>
+                {% else %}
+                    <li class="navbar-item">
+                        <a href="{% url 'logout' %}" class="nav-link">logout</a>
+                    </li>
+                {% endif %}
+                
+               
+                <li class="navbar-item">
+                    <a href="{% url 'signup' %}" class="nav-link">signup</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

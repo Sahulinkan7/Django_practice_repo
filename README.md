@@ -152,3 +152,11 @@ static files inside application. There is no need of any changes in settings.py 
 
 # Project 32
  This project is about changing user password.
+
+# Project 33
+ this project is about practicing authentication and authorization. 
+
+# Project 34 
+ This project is about custom admin functionalities.
+
+

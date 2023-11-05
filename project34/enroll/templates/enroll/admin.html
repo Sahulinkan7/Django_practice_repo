@@ -1,0 +1,17 @@
+{% extends "enroll/base.html" %}
+
+
+{% block content %}
+
+    {% for i in users %}
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="{% url 'profile' i.id %}">{{i.username}}</a> <br>
+        </li>
+    </ul>
+        
+    {% endfor %}
+{% endblock content %}
+
+

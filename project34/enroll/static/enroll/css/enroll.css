@@ -1,0 +1,13 @@
+html,body{
+    height: 100%;
+    background-color: #946733;
+}
+
+.container-fluid{
+    min-height: 100%;
+}
+
+.errors{
+    color:red;
+    font-weight: 500;
+}

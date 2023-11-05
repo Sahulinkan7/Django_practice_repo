@@ -159,4 +159,7 @@ static files inside application. There is no need of any changes in settings.py 
 # Project 34 
  This project is about custom admin functionalities.
 
+# Project 35 
+ This project is about autherization and authentication permissions in django. once a model is migrated , it comes with 4 permissions by default. add,change,view and delete. 
+
 

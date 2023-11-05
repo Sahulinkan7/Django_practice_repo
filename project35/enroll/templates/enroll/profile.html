@@ -1,0 +1,21 @@
+{% extends "enroll/base.html" %}
+
+{% block content %}
+    {% if messages %}
+        {% for message in messages %}
+            <h3>{{message}}</h3>
+        {% endfor %}
+    {% endif %}
+    {% for stu in  students %}
+        {{stu.name}}
+        {{stu.email}}
+        {% comment %} {% if perms.enroll.delete_student %} {% endcomment %}
+        <form action="{% url 'deletedata' stu.id %}" method="post">
+            {% csrf_token %}
+            <input type="submit" value="Delete" class="form-control btn-danger btn">
+        </form>
+        {% comment %} {% endif %} {% endcomment %}
+    {% endfor %}
+    
+
+{% endblock content %}

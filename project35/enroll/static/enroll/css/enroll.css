@@ -1,0 +1,8 @@
+html,body{
+    height: 100%;
+    background-color: #10cf80;
+}
+
+.container-fluid{
+    min-height: 100%;
+}

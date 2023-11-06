@@ -1,0 +1,26 @@
+html,body{
+    background-color: rgb(75, 69, 69)0c0;
+    height: 100%;
+}
+
+.container-fluid{
+    min-height: 100%;
+}
+
+.errors{
+    color:red;
+    font-weight: 500;
+}
+
+.alert-success{
+    background-color: green;
+    font-weight: 500;
+    color: white;
+}
+
+.alert-error{
+    background-color: rgb(128, 30, 0);
+    font-weight: 500;
+    color: white;
+}
+

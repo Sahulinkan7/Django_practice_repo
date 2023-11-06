@@ -162,4 +162,9 @@ static files inside application. There is no need of any changes in settings.py 
 # Project 35 
  This project is about autherization and authentication permissions in django. once a model is migrated , it comes with 4 permissions by default. add,change,view and delete. 
 
+# Project miniblog
+ This is a small mini blog project based on CRUD application using function based views. 
+ 
+ It covers the concept of authentication,authorization for the users.
+
 

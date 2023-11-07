@@ -185,5 +185,9 @@ static files inside application. There is no need of any changes in settings.py 
  class ChildClass2(parentclassname):
         salary=models.integerField()
 
+# Project 38
+ This project is about inheriting model class which is not an abstract class.
+ child class inherits the parent class which is not an abstract class. In this kind of inheritance, the relationship build upon a one to one relation. 
+
 
 

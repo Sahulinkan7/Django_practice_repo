@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'school/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'school/css/bootstrap.min.css' %}">
+</head>
+<body>
+    <h3>Student Data</h3>
+    <table class="table table-hover">
+        <thead class="text-center">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>roll</th>
+                <th>city</th>
+                <th>marks</th>
+                <th>adm date</th>
+                <th>pass date</th>
+            </tr>
+        </thead>
+        <tbody class="text-center">
+            {% for stu in students %}
+                <tr>
+                    <td>{{stu.id}}</td>
+                    <td>{{stu.name}}</td>
+                    <td>{{stu.email}}</td>
+                    <td>{{stu.roll}}</td>
+                    <td>{{stu.city}}</td>
+                    <td>{{stu.marks}}</td>
+                    <td>{{stu.admdatetime}}</td>
+                    <td>{{stu.passdatetime}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <hr>
+    <h3>avergae is {{average}} - {{average.marks__avg}}</h3>
+    <hr>
+    <h3>Total is {{total}} - {{total.marks__sum}}</h3>
+</body>
+</html>

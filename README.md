@@ -167,4 +167,7 @@ static files inside application. There is no need of any changes in settings.py 
  
  It covers the concept of authentication,authorization for the users.
 
+# Project 36
+ This is about knowing the querysets in django orm.
+
 

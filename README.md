@@ -170,4 +170,20 @@ static files inside application. There is no need of any changes in settings.py 
 # Project 36
  This is about knowing the querysets in django orm.
 
+# Project 37 
+ This project is about abstract model class in django orm.
+ abstract base class is the parent class which is further inherited by its child classes. 
+
+ class parentclassname(models.Model):
+        name=models.charfield(max_length=90)
+        class Meta:
+                abstract=True
+
+ class ChildClass(parentclassname):
+        fees=models.integerField()
+
+ class ChildClass2(parentclassname):
+        salary=models.integerField()
+
+
 

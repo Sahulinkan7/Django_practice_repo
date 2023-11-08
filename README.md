@@ -189,5 +189,9 @@ static files inside application. There is no need of any changes in settings.py 
  This project is about inheriting model class which is not an abstract class.
  child class inherits the parent class which is not an abstract class. In this kind of inheritance, the relationship build upon a one to one relation. 
 
+# Project 39
+ This project is about one to one relationship of models.
+ 
+
 
 

@@ -191,6 +191,9 @@ static files inside application. There is no need of any changes in settings.py 
 
 # Project 39
  This project is about one to one relationship of models.
+
+# Project 40
+ This project is about one-to-many relationship in django models.
  
 
 

@@ -200,6 +200,15 @@ static files inside application. There is no need of any changes in settings.py 
 
 # Project 42 
  This project is about cookies in django framework . 
+
+# Project 43
+ This project is about session framework in django. 
+  Here , i have implemented the database based session management. 
+  set,get and delete session , all works with request only.
+  request.session['key']='value'
+  del request.session['key']
+  request.session.get('key',default='Guest')
+  'key' in request.session
  
 
 

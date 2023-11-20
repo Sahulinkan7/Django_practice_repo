@@ -197,6 +197,9 @@ static files inside application. There is no need of any changes in settings.py 
 
 # Project 41
  This project is about many-to-many relationship in django models.
+
+# Project 42 
+ This project is about cookies in django framework . 
  
 
 

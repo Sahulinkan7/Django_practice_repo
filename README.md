@@ -209,6 +209,9 @@ static files inside application. There is no need of any changes in settings.py 
   del request.session['key']
   request.session.get('key',default='Guest')
   'key' in request.session
+
+# Project 44 
+ This project is about session and its methods in Django framework .
  
 
 

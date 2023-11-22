@@ -232,7 +232,10 @@ static files inside application. There is no need of any changes in settings.py 
  - > passing templates
         url=''
         pattern_name=''
-        
+
+# crudproject2
+ This project about a crud application implementing the BASE class based views. 
+ used TemplateView, RedirectView and View classes for creating subclasses.
 
  
  

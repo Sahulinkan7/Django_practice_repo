@@ -1,0 +1,53 @@
+{% extends "enroll/base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3 col-md-3 border border-3 border-black p-5 shadow">
+            <form action="" method="post" novalidate>
+                {% csrf_token %}
+                {% for field in form %}
+                    {{field.label_tag}}
+                    {{field}} {{field.errors|striptags}}
+                {% endfor %}
+                <input class="btn btn-primary my-1" type="submit" value="Save">
+            </form>
+            
+        </div>
+        <div class="col-sm-9 col-md-9">
+            <table class="table table-hover">
+                <thead>
+                    <tr >
+                        <td>id</td>
+                        <td>name</td>
+                        <td>email</td>
+                        <td>course</td>
+                        <td>action</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for student in students %}
+                        <tr>
+                            <th>{{student.id}}</th>
+                            <th>{{student.name}}</th>
+                            <th>{{student.email}}</th>
+                            <th>{{student.course}}</th>
+                            <th>
+                                <div class="d-inline-flex mx-1">
+                                    <a href="{% url 'update' student.id %}" class="btn btn-primary">Edit</a>
+                                </div>
+                                <form class="d-inline-flex" action="{% url 'delete' student.id %}" method="post">
+                                    {% csrf_token %}
+                                    <input class="btn btn-danger" type="submit" value="Delete"></input>
+                                </form>
+                            </th>
+                        </tr>
+                    {% endfor %}
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock content %}

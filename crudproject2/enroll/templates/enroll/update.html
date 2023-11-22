@@ -1,0 +1,29 @@
+{% extends "enroll/base.html" %}
+
+{% block content %}
+
+<div class="container">
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                {{message}}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            
+        {% endfor %}
+    {% endif %}
+    <form action="" method="post">
+        {% csrf_token %}
+        {% for field in form %}
+            {{field.label_tag}}
+            {{field}} {{field.errors|striptags}}
+        
+        {% endfor %}
+        <input class="btn btn-primary my-1" type="submit" value="Update">
+        <a class="btn btn-primary" href="{% url 'addshow' %}">Back to home</a>
+    </form>
+    
+</div>
+
+
+{% endblock content %}

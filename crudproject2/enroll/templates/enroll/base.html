@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'enroll/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'enroll/css/core.css' %}">
+</head>
+<body class="bg-danger-subtle">
+    <div class="container-fluid">
+        <div class="row m-5">
+            <h1 class="text-center text-white bg-black p-2">Base class-based Model Form View</h1>
+        </div>
+        {% block content %}
+        
+        {% endblock content %}
+    </div>
+    <script src="{% static 'enroll/js/bootstrap.min.js' %}"></script>
+</body>
+</html>

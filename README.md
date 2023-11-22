@@ -212,6 +212,14 @@ static files inside application. There is no need of any changes in settings.py 
 
 # Project 44 
  This project is about session and its methods in Django framework .
+
+# Project 45 
+ This project is about Class based Views. 
+
+ creating class adn its method get and post for separate type requests handling.
+ one class view handling multiple or different templates. 
+
+ 
  
 
 

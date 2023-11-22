@@ -237,6 +237,29 @@ static files inside application. There is no need of any changes in settings.py 
  This project about a crud application implementing the BASE class based views. 
  used TemplateView, RedirectView and View classes for creating subclasses.
 
+# Project 48
+ This project is about practicing ListView based view in django.
+
+        mention model=modelname
+        default queryset context = modelname_list
+
+        default queryset, template
+        default_template is 'appname/model_list.html'
+        to add custom template , mention it as below.
+                template_name='student.html'
+        default context is 'modelnames'
+        default query is query_set. 
+        context_object_name='students'
+
+        to add custom query set in List view , use the method as below.
+        
+        def get_ queryset(self)
+                return 'newqueryset'
+
+        to send extra context use the method below 
+        def get_context_data(self,*args,**kwargs):
+                context=super().get_context_data(*args,**kwargs)
+                context['freshers']=Student.objects.all()
  
  
 

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Custom Template in List View</h1>
+    {% for student in students %}
+        {{student.id}} - {{student.name}} - {{student.email}}
+    {% endfor %}
+
+    <hr>
+    <h1>all students </h1>
+    {% for stu in allstudents %}
+        {{stu.id}} {{stu.name}} {{stu.email}}<br>
+    {% endfor %}
+</body>
+</html>

@@ -226,6 +226,14 @@ static files inside application. There is no need of any changes in settings.py 
  - > passing extra context 
  - > get_context_data() implementation in Templateview class
 
+
+# Project 47
+ This project is about Redirect view 
+ - > passing templates
+        url=''
+        pattern_name=''
+        
+
  
  
 

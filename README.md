@@ -219,6 +219,13 @@ static files inside application. There is no need of any changes in settings.py 
  creating class adn its method get and post for separate type requests handling.
  one class view handling multiple or different templates. 
 
+
+# Project 46
+ This project is about Template view 
+ - > passing templates
+ - > passing extra context 
+ - > get_context_data() implementation in Templateview class
+
  
  
 

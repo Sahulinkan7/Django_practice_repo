@@ -269,6 +269,14 @@ static files inside application. There is no need of any changes in settings.py 
  default template is 'appname/modelname_detail.html'
  get_context_data() can be used for addition contexts. 
  pk_url_kwarg to change urls parameter name
+
+# Project 50
+ This project is about Generic Editing class : FormView
+ by using formview class, forms can be easily rendered in templates.
+
+        form_class=<mention form class name here>
+        form_valid() used to return data on form validation.
+        success_url='mention url to redirect up on successfull form validation'
  
  
 

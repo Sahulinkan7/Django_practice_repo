@@ -260,6 +260,15 @@ static files inside application. There is no need of any changes in settings.py 
         def get_context_data(self,*args,**kwargs):
                 context=super().get_context_data(*args,**kwargs)
                 context['freshers']=Student.objects.all()
+
+
+# Project 49 
+ This project is about implementing DetailView.
+ DetailView takes particular object id or pk or slug field from url and gives its detail.
+ default context_object is 'modelname'
+ default template is 'appname/modelname_detail.html'
+ get_context_data() can be used for addition contexts. 
+ pk_url_kwarg to change urls parameter name
  
  
 

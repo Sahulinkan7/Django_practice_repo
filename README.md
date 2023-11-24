@@ -277,6 +277,11 @@ static files inside application. There is no need of any changes in settings.py 
         form_class=<mention form class name here>
         form_valid() used to return data on form validation.
         success_url='mention url to redirect up on successfull form validation'
+
+# Project 51 
+ This project is about signals in django.
+
+ implemented pre_save,post_save, user_logged_in,user_logged_out 
  
  
 

@@ -289,6 +289,10 @@ static files inside application. There is no need of any changes in settings.py 
 
 # Project 53
  This project is about class based custom middlewares in django. 
+
+# Project 54 
+ This project is about class based multiple middlewares in django. 
+ 
  
  
 

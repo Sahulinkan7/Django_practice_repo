@@ -282,6 +282,10 @@ static files inside application. There is no need of any changes in settings.py 
  This project is about signals in django.
 
  implemented pre_save,post_save, user_logged_in,user_logged_out 
+
+
+# Project 52
+ This project is about middlewares in django. 
  
  
 
